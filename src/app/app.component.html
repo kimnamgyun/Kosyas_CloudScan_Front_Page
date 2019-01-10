@@ -19,19 +19,21 @@
           <a href="#target4" class="scroll">Customers</a>
           <a href="#target5" class="scroll">Contact</a>
         </nav>
+        <button (click)="switchLanguage('en')"> {{'btn_eng'|translate}}</button>
+        <button (click)="switchLanguage('ko')"> {{'btn_kor'|translate}}</button>
+        <button (click)="switchLanguage('fr')"> {{'btn_fra'|translate}}</button>
       </section>
       </div>
 
       <span class="more-icon"></span>
     </div>
 
-    <h3 class="title">KOSYAS 클라우드 서비스로
-      시스템과 웹 보안을 가장 쉽고! 빠르게!<br>C-SIMS</h3>
+    <h3 class="title">{{'title'|translate}}<br>C-SIMS</h3>
 
     <button class="submit-button" (click)="goSubmit(   )">
-      <span class="submit-title">로그인</span>
+      <span class="submit-title">{{'button'|translate}}</span>
       <span class="text-hr"></span>
-      <span class="submit-sub-title">로그인 접속</span>
+      <span class="submit-sub-title">{{'button-1'|translate}}</span>
 
 
     </button>
@@ -54,13 +56,13 @@
     <span class="star star-7" [hidden]="!backgroundColor"></span>
     <div class="content-text">
       <h3>
-        웹방화벽이 막지 못하는 공격을 탐지하였습니다.<br>
-        보안 업데이트 및 정책 관리 등 보안 지속성 측면에서<br>
-        C-SIMS는 효과적인 서비스입니다.
+        {{'content-1-1'|translate}}<br>
+        {{'content-1-2'|translate}}<br>
+        {{'content-1-3'|translate}}
       </h3>
       <p>
-        로그 빅데이터 분석을 통한 지능형 지속 공격(APT) 탐지 및 방어, 머신 러닝을 통하여 탐지 결과에 대한 검증.(오탐 최소화) <br>
-        이제 알려지지 않은 보안 위협 분석과 이상징후 탐지를 C-SIMS가 제공합니다.
+        {{'content-1-4'|translate}}<br>
+        {{'content-1-5'|translate}}
       </p>
     </div>
     <div class="content-img">
@@ -77,27 +79,27 @@
     <div class="content-text">
 
       <h3>
-        <strong> 대시보드</strong>를 통한 실시간 로그 분석 지원<br>
+        {{'content-2-1'|translate}}<br>
       </h3>
       <p>
-        로그분석을 기반으로 탐지 룰을 적용하여 위협에 대해 보완하고 웹 공격을 방어할 수 있습니다.<br>
-        웹 애플리케이션 보안은 실시간으로 이뤄져야 합니다.<br>
-        각 취약점에 따른 정보를 한눈에 확인할 수 있습니다.<br>
-        Kosyas의 C-SIMS을 통해 기업의 시스템 관리와 보안에 대한 보안 담당자의 고민을 해결해 드립니다.
+        {{'content-2-2'|translate}}<br>
+        {{'content-2-3'|translate}}<br>
+        {{'content-2-4'|translate}}<br>
+        {{'content-2-5'|translate}}
       </p>
     </div>
   </div>
   <div class="kosyas-content-3">
     <div class="content-text">
       <h3>
-        <strong>Docker</strong>를 통한 로그 수집/탐지/분석 최상 서비스
+        {{'content-3-1'|translate}}
         <br>
       </h3>
       <p>
-        클라우드 자원의 보안을 위하여 사내 클라우드의 이상동작을 탐지합니다.<br>
-        기존의 모니터링 방식의 한계로 장애 원인 규명을 위한 로그 분석을 할 경우 많은 시간과 인력이 소모됩니다.<br>
-        지능형 공격을 사전에 관리하기 위해 위협 <strong>인텔리젼스 모듈</strong>을 사용하여 로그 수집 및 정보를 분석에 활용합니다. <br>
-        C-SIMS는 <strong>Docker</strong>를 통해 업데이트 및 로그 수집/탐지/분석 서비스를 제공하여 기업의 비용을 절약합니다.
+        {{'content-3-2'|translate}}<br>
+        {{'content-3-3'|translate}}<br>
+        {{'content-3-4'|translate}} <br>
+        {{'content-3-5'|translate}}
       </p>
 
     </div>
@@ -111,45 +113,45 @@
 
     <div class="content-text">
       <h3>
-        이용과정<br>
+        {{'content-4-1'|translate}}<br>
 
       </h3>
 
       <h2>
-        보안 사고가 어디에서 시작됐고 그 여파가 어떠 한지를 이해하여 효과적으로 대응하는 것이 중요합니다.
+        {{'content-4-2'|translate}}
       </h2>
         <br>
 
       <div class="content-img">
           <img class="item" src="assets/imgs/aim.png" >
-
-
-        <li>
-          <strong>실시간 로그 분석</strong>
+        <br>
+        <strong>{{'content-4-3'|translate}}</strong>
           <p>
-            서버에서 발생하는 로그를  <br> 실시간 분석 시스템,웹, <br> 네트워크 취약점 및 로그 보고
+            {{'content-4-4'|translate}}<br>
+            {{'content-4-4-1'|translate}}
           </p>
-        </li>
+
         </div>
 
       <div class="content-img">
         <img class="item" src="assets/imgs/pie-chart.png" >
-        <li>
-          <strong>취약점 확인</strong>
+        <br>
+          <strong>{{'content-4-5'|translate}}</strong>
           <p>
-            서버의 여러 취약점을 <br> 한눈에 확인. 여러 시각화를  <br>  통한 각 취약점에 대한 대응
+            {{'content-4-6'|translate}}<br>
+            {{'content-4-6-1'|translate}}
           </p>
-        </li>
+
       </div>
 
       <div class="content-img">
         <img class="item" src="assets/imgs/file.png" >
-        <li>
-          <strong>실시간 방어</strong>
+        <br>
+          <strong>{{'content-4-7'|translate}}</strong>
           <p>
-            특정 위협에 대한<br> 룰 적용을 통한 <br> 위협 방어
+            {{'content-4-8'|translate}}
           </p>
-        </li>
+
       </div>
 
 
@@ -158,34 +160,36 @@
 
       <div class="content-img">
         <img class="item" src="assets/imgs/chart.png" >
-        <li>
-          <strong>보고서 작성</strong>
+        <br>
+          <strong>{{'content-4-9'|translate}}</strong>
           <p>
-            로그 분석에 따른 시간 및 기간 <br> 설정을 통한 종합적인  <br> 보고서 작성 기능 제공
+            {{'content-4-10'|translate}}<br>
+            {{'content-4-10-1'|translate}}
           </p>
-        </li>
+
       </div>
 
       <div class="content-img">
         <img class="item" src="assets/imgs/alarm.png" >
 
 
-        <li>
-          <strong>실시간 알람 서비스</strong>
+        <br>
+          <strong>{{'content-4-11'|translate}}</strong>
           <p>
-            위협에 대한 실시간 알람 <br> 이메일을 통한 주기적 알람 <br> 언제 어디든지 대응
+            {{'content-4-12'|translate}}<br>
+            {{'content-4-12-1'|translate}}
           </p>
-        </li>
+
       </div>
 
       <div class="content-img">
         <img class="item" src="assets/imgs/docker.png" >
-        <li>
-          <strong>Docker Compose</strong>
+        <br>
+          <strong>{{'content-4-13'|translate}}</strong>
           <p>
-            Docker를 이용하여<br> 다른 버전관리 필요없이 <br> 한번의 명령으로 구축
+            {{'content-4-14'|translate}}
           </p>
-        </li>
+
       </div>
 
 
@@ -200,7 +204,7 @@
 
     <div class="content-text">
       <h3>
-        고객의 기대에 부응하는 <br> KOSYAS의 고객사
+        {{'content-5-1'|translate}} <br> {{'content-5-2'|translate}}
       </h3>
 
     </div>
@@ -214,7 +218,7 @@
 
     <a class="benefit" href="http://www.kosyas.com/html/intro/client.php" target="_blank">
             <span>
-                자세히 보기
+                {{'content-5-3'|translate}}
             </span>
       <img src="assets/imgs/home_arrow_24.png" >
     </a>
@@ -228,14 +232,14 @@
       <div id="target"></div>
 
       <h3>
-        서비스 가입 문의<br> C-SIMS를 기업 전산 시스템 내부에 설치할 수 있습니다.
+        {{'content-6-1'|translate}}<br> {{'content-6-2'|translate}}
       </h3>
     </div>
     <div class="content-hr"></div>
 
     <button class="submit-button" (click)="goSubmit()">
       <a href = "https://docs.google.com/forms/d/12nvJDGgksohDAWFOiaj4LP3p9pfleaTolV_xF6nj4-k/edit" target="_blank">
-      <span class="submit-title">상담 신청 하기</span>
+      <span class="submit-title">{{'content-6-3'|translate}}</span>
       </a>
     </button>
 
@@ -243,23 +247,23 @@
 
       <ul>
         <li>
-          <strong>Cloud 시스템에 적용</strong>
+          <strong>{{'content-6-4'|translate}}</strong>
           <p>
-            사내 클라우드 시스템에 설치하여 사용
+            {{'content-6-5'|translate}}
           </p>
         </li>
 
         <li>
-          <strong>Box 형태로 시스템에 적용</strong>
+          <strong>{{'content-6-6'|translate}}</strong>
           <p>
-            작은 미니 PC를 통한 직접적인 <br> 사내 보안 노출을 방지하는 <br> 형태로 사용
+            {{'content-6-7'|translate}}
           </p>
         </li>
 
         <li>
-          <strong>소프트웨어 형식 시스템 적용</strong>
+          <strong>{{'content-6-8'|translate}}</strong>
           <p>
-            사내 자원을 통한 <br> 자체적인 시스템 <br> 형태로 사용
+            {{'content-6-9'|translate}}
           </p>
         </li>
       </ul>
@@ -282,7 +286,7 @@
         <a href="#">개인정보처리방침</a>
       </div>
       <div class="content-02">
-        <span class="tel">한국시스템보증(주) 서울시 송파구 문정로 4길 12 (문정동, 해진빌딩) 대표이사 : 조대일   </span>
+        <span class="tel">{{'content-7-1'|translate}}   </span>
         <br>
           <small>Tel : 02-2097-9797 Fax : 02-2097-9777  |  Copyright © kosyas of Korea Corp. All rights reserved. </small>
       </div>

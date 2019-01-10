@@ -326,8 +326,13 @@
   }
   .kosyas-content-4 {
     position: relative;
-    width: 100%;
-    height: 840px;
+    top: -55px;
+    left: -10px;
+    right: -10px;
+    width: 1900px;
+    height: 680px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 50px;
     background-color: #f2f2f2;
     display: flex;
@@ -336,10 +341,10 @@
 
     .content-text {
       display: inline-block;
-      margin-left: 100px;
 
       h3 {
-        margin-left: 350px;
+        margin-top: 10px;
+        margin-left: 550px;
         font-size: 39px;
         font-weight: 200;
         line-height: 50px;
@@ -347,22 +352,18 @@
 
       h2 {
         margin-bottom: 50px;
-        margin-left: 140px;
-        font-size: 15px;
+        margin-left: 250px;
+        font-size: 20px;
         font-weight: 200;
         line-height: 50px;
       }
 
       p {
-        margin-top: 24px;
-        margin-right: 150px;
-        margin-bottom: 80px;
+        margin-left: 100px;
         font-size: 15px;
-        font-weight: 200;
-        line-height: 23px;
 
         img {
-
+          margin-left: 40px;
           width: 522px;
           margin-top: 70px;
         }
@@ -371,8 +372,13 @@
     .content-img {
       display: inline-block;
 
+      strong {
+        margin-left: 200px;
+
+      }
+
       img {
-        margin-left: 40px;
+        margin-left: 200px;
         width: 100px;
       }
     }

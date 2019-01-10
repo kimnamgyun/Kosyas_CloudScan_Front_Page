@@ -5,7 +5,7 @@ import 'slick-carousel';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import {NgsRevealConfig} from 'ng-scrollreveal';
-
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -14,14 +14,35 @@ import {NgsRevealConfig} from 'ng-scrollreveal';
 })
 export class AppComponent implements OnInit {
   private backgroundColor: boolean;
+  private  translate: TranslateService;
 
-  constructor(ngsRevealConfig: NgsRevealConfig) {
-    ngsRevealConfig.delay = 200;
-    ngsRevealConfig.duration = 800;
+  constructor( translate: TranslateService) {
+    this.translate = translate;
+    this.translate.setDefaultLang('ko');
   }
 
+  public switchLanguage( lang: string ): void {
+    this.translate.use(lang);
+  }
+
+/*  param = {value: 'world'};
+
+  constructor(translate: TranslateService) {
+    // 현재 사용 언어에서 해당하는 다국어 설정이 없을 경우 기본 사용하는 언어 설정
+    translate.setDefaultLang('ko');
+
+    // 현재 사용 언어 설정
+    translate.use('ko');
+  }*/
+
+  /*constructor(ngsRevealConfig: NgsRevealConfig) {
+    ngsRevealConfig.delay = 200;
+    ngsRevealConfig.duration = 800;
+  }*/
+
   ngOnInit() {
-   $('.slide-container').slick({
+
+    $('.slide-container').slick({
       autoplay : true,
       dots: true,
       speed: 200,
@@ -41,12 +62,12 @@ export class AppComponent implements OnInit {
     }
 
 
-    for (const htmlElementJQueryElement of $('.scroll').click(function (event) {
-      event.preventDefault();
-      $('html,body').animate({scrollTop: $(this.hash).offset().top}, 500);
-    })) {
-
-    }
+   // for (const htmlElementJQueryElement of $('.scroll').click(function (event) {
+   //    event.preventDefault();
+   //    $('html,body').animate({scrollTop: $(this.hash).offset().top}, 500);
+   //  })) {
+   //
+   //  }
 
 
 
