@@ -1,134 +1,137 @@
+<div class="home" [ngsRevealSet]="{ reset:false }" [ngsSelector]="'.item'">
+  <div id="point0"></div>
+  <div class="head">
 
+    <slideshow #slideshow
+               [imageUrls]="imageUrls"
+               [height]="height"
+               [minHeight]="minHeight"
+               [arrowSize]="arrowSize"
+               [showArrows]="showArrows"
+               [disableSwiping]="disableSwiping"
+               [autoPlay]="autoPlay"
+               [stopAutoPlayOnSlide]="stopAutoPlayOnSlide"
+               [debug]="debug"
+               [backgroundSize]="backgroundSize"
+               [backgroundPosition]="backgroundPosition"
+               [backgroundRepeat]="backgroundRepeat"
+               [showDots]="showDots"
+               [dotColor]="dotColor"
+               [showCaptions]="showCaptions"
+               [captionColor]="captionColor"
+               [captionBackground]="captionBackground"
+               [lazyLoad]="lazyLoad"
+               [hideOnNoSlides]="hideOnNoSlides">
+    </slideshow>
 
-<div class="home-container" [ngsRevealSet]="{ reset:false }" [ngsSelector]="'.item'">
-
-  <div class="kosyas-head">
-    <div id="target0">
-    </div>
-    <div class="kosyas-top">
-      <a href="http://www.kosyas.com" target="_blank">
-        <span class="kosyas-service-logo"></span>
+    <div class="top">
+      <a [ngx-scroll-to]="'#point0'">
+        <span class="service-logo"></span>
       </a>
-      <div class="category">
-      <section class="color-7">
-        <nav class="cl-effect-21">
-          <a href="#" class="scroll">Home</a>
-          <a href="#target1" class="scroll">Why_C-SIMS</a>
-          <a href="#target2" class="scroll">Services</a>
-          <a href="#target3" class="scroll">Function</a>
-          <a href="#target4" class="scroll">Customers</a>
-          <a href="#target5" class="scroll">Contact</a>
+        <nav class="effect">
+          <div class="category">
+
+          <a [ngx-scroll-to]="'#point0'" class="scroll">Home</a>
+          <a [ngx-scroll-to]="'#point1'" class="scroll">Why_Cloud Scan</a>
+          <a [ngx-scroll-to]="'#point2'" class="scroll">Services</a>
+          <a [ngx-scroll-to]="'#point3'" class="scroll">Supports</a>
+          <a [ngx-scroll-to]="'#point4'" class="scroll">Customers</a>
+          <a [ngx-scroll-to]="'#point5'" class="scroll">Contact</a>
+
+            <button class="change_button" (click)="Language_exchange('en')"><img class="item" src="assets/imgs/united-states.png"> </button>
+            <button class="change_button" (click)="Language_exchange('ko')"><img class="item" src="assets/imgs/south-korea.png"> </button>
+
+          </div>
         </nav>
-        <button (click)="switchLanguage('en')"> {{'btn_eng'|translate}}</button>
-        <button (click)="switchLanguage('ko')"> {{'btn_kor'|translate}}</button>
-        <button (click)="switchLanguage('fr')"> {{'btn_fra'|translate}}</button>
-      </section>
+    </div>
+
+      <div class="btn hover4">
+        {{'button'|translate}} |
+        {{'button-1'|translate}}
       </div>
 
-      <span class="more-icon"></span>
-    </div>
-
-    <h3 class="title">{{'title'|translate}}<br>C-SIMS</h3>
-
-    <button class="submit-button" (click)="goSubmit(   )">
-      <span class="submit-title">{{'button'|translate}}</span>
-      <span class="text-hr"></span>
-      <span class="submit-sub-title">{{'button-1'|translate}}</span>
-
-
-    </button>
-  </div>
-
-  <div id="target1"></div>
-  <div class="kosyas-content-1" (scroll)="onScroll($event)">
-
-    <div class="dark-background"></div>
-    <div class="sky-background" [ngClass]="{'close-sky-background': backgroundColor}">
-      <div class="sun"></div>
-      <div class="shadow"></div>
-    </div>
-    <span class="star star-1" [hidden]="!backgroundColor"></span>
-    <span class="star star-2" [hidden]="!backgroundColor"></span>
-    <span class="star star-3" [hidden]="!backgroundColor"></span>
-    <span class="star star-4" [hidden]="!backgroundColor"></span>
-    <span class="star star-5" [hidden]="!backgroundColor"></span>
-    <span class="star star-6" [hidden]="!backgroundColor"></span>
-    <span class="star star-7" [hidden]="!backgroundColor"></span>
+    <div id="point1"></div>
+       <div class="story-1">
     <div class="content-text">
       <h3>
-        {{'content-1-1'|translate}}<br>
-        {{'content-1-2'|translate}}<br>
-        {{'content-1-3'|translate}}
-      </h3>
-      <p>
-        {{'content-1-4'|translate}}<br>
-        {{'content-1-5'|translate}}
-      </p>
-    </div>
-    <div class="content-img">
-      <img src="assets/imgs/theaf.png" alt="phone4">
-    </div>
-  </div>
-
-  <div id="target2"></div>
-  <div class="kosyas-content-2">
-
-    <div class="content-img">
-      <img class="item" src="assets/imgs/content8.png" alt="phone1">
-    </div>
-    <div class="content-text">
-
-      <h3>
-        {{'content-2-1'|translate}}<br>
-      </h3>
-      <p>
-        {{'content-2-2'|translate}}<br>
-        {{'content-2-3'|translate}}<br>
-        {{'content-2-4'|translate}}<br>
-        {{'content-2-5'|translate}}
-      </p>
-    </div>
-  </div>
-  <div class="kosyas-content-3">
-    <div class="content-text">
-      <h3>
-        {{'content-3-1'|translate}}
+        {{'line-1-1'|translate}}
         <br>
       </h3>
       <p>
-        {{'content-3-2'|translate}}<br>
-        {{'content-3-3'|translate}}<br>
-        {{'content-3-4'|translate}} <br>
-        {{'content-3-5'|translate}}
+        {{'line-1-2'|translate}}<br>
+        {{'line-1-3'|translate}}<br>
+        {{'line-1-4'|translate}}<br>
+        {{'line-1-5'|translate}}<br>
+        {{'line-1-6'|translate}}
       </p>
 
     </div>
     <div class="content-img">
-      <img class="item" src="assets/imgs/content6.png" alt="phone2">
+      <img class="item" src="assets/imgs/content5.png" alt="phone2">
+    </div>
+
+  </div>
+
+    <div id="point2"></div>
+      <div class="story-2">
+
+    <div class="content-img">
+      <img class="item" src="assets/imgs/content6.png" alt="phone1">
+    </div>
+    <div class="content-text">
+
+      <h3>
+        {{'line-2-1'|translate}}<br>
+      </h3>
+      <p>
+        {{'line-2-2'|translate}}<br>
+        {{'line-2-3'|translate}}<br>
+        {{'line-2-4'|translate}}<br>
+        {{'line-2-5'|translate}}
+      </p>
     </div>
   </div>
 
-  <div id="target3"></div>
-  <div class="kosyas-content-4">
+     <div class="story-3">
+    <div class="content-text">
+      <h3>
+        {{'line-3-1'|translate}}
+        <br>
+      </h3>
+      <p>
+        {{'line-3-2'|translate}}<br>
+        {{'line-3-3'|translate}}<br>
+        {{'line-3-4'|translate}} <br>
+        {{'line-3-5'|translate}}
+      </p>
+
+    </div>
+    <div class="content-img">
+      <img class="item" src="assets/imgs/content8.png" alt="phone2">
+    </div>
+  </div>
+      <div id="point3"></div>
+
+    <div class="story-4">
 
     <div class="content-text">
       <h3>
-        {{'content-4-1'|translate}}<br>
+        {{'line-4-1'|translate}}<br>
 
       </h3>
 
       <h2>
-        {{'content-4-2'|translate}}
+        {{'line-4-2'|translate}}
       </h2>
         <br>
 
       <div class="content-img">
           <img class="item" src="assets/imgs/aim.png" >
         <br>
-        <strong>{{'content-4-3'|translate}}</strong>
+        <strong>{{'line-4-3'|translate}}</strong>
           <p>
-            {{'content-4-4'|translate}}<br>
-            {{'content-4-4-1'|translate}}
+            {{'line-4-4'|translate}}<br>
+            {{'line-4-4-1'|translate}}
           </p>
 
         </div>
@@ -136,75 +139,65 @@
       <div class="content-img">
         <img class="item" src="assets/imgs/pie-chart.png" >
         <br>
-          <strong>{{'content-4-5'|translate}}</strong>
+          <strong>{{'line-4-5'|translate}}</strong>
           <p>
-            {{'content-4-6'|translate}}<br>
-            {{'content-4-6-1'|translate}}
+            {{'line-4-6'|translate}}<br>
+            {{'line-4-6-1'|translate}}
           </p>
 
       </div>
-
-      <div class="content-img">
-        <img class="item" src="assets/imgs/file.png" >
-        <br>
-          <strong>{{'content-4-7'|translate}}</strong>
-          <p>
-            {{'content-4-8'|translate}}
-          </p>
-
-      </div>
-
-
-
-      <br>
 
       <div class="content-img">
         <img class="item" src="assets/imgs/chart.png" >
         <br>
-          <strong>{{'content-4-9'|translate}}</strong>
-          <p>
-            {{'content-4-10'|translate}}<br>
-            {{'content-4-10-1'|translate}}
-          </p>
-
-      </div>
-
-      <div class="content-img">
-        <img class="item" src="assets/imgs/alarm.png" >
-
-
-        <br>
-          <strong>{{'content-4-11'|translate}}</strong>
-          <p>
-            {{'content-4-12'|translate}}<br>
-            {{'content-4-12-1'|translate}}
-          </p>
-
-      </div>
-
-      <div class="content-img">
-        <img class="item" src="assets/imgs/docker.png" >
-        <br>
-          <strong>{{'content-4-13'|translate}}</strong>
-          <p>
-            {{'content-4-14'|translate}}
-          </p>
+        <strong>{{'line-4-7'|translate}}</strong>
+        <p>
+          {{'line-4-8'|translate}}<br>
+          {{'line-4-9'|translate}}
+        </p>
 
       </div>
 
 
+      <br>
+
+      <div class="content-img-1">
+        <img class="item" src="assets/imgs/line.png" >
+      </div>
+
+      <div class="content-img-2">
+        <img class="item" src="assets/imgs/cvp.png" >
+      </div>
+
+      <div class="content-text-2">
+
+        <ul>
+          <li>
+            {{'line-4-10'|translate}}<br>
+            {{'line-4-11'|translate}}<br>
+            {{'line-4-12'|translate}}<br>
+          </li>
+          <br>
+          <li>
+          {{'line-4-13'|translate}}<br>
+          {{'line-4-14'|translate}}<br>
+          {{'line-4-15'|translate}}<br>
+          {{'line-4-16'|translate}}<br>
+          </li>
+        </ul>
+      </div>
 
     </div>
 
   </div>
+      <div id="point4"></div>
 
-  <div id="target4"></div>
-  <div class="kosyas-content-5">
+    <div class="story-5">
 
 
     <div class="content-text">
       <h3>
-        {{'content-5-1'|translate}} <br> {{'content-5-2'|translate}}
+        {{'line-5-1'|translate}} <br> {{'line-5-2'|translate}}
       </h3>
 
     </div>
@@ -218,78 +211,53 @@
 
     <a class="benefit" href="http://www.kosyas.com/html/intro/client.php" target="_blank">
             <span>
-                {{'content-5-3'|translate}}
+                {{'line-5-3'|translate}}
             </span>
       <img src="assets/imgs/home_arrow_24.png" >
     </a>
   </div>
+      <div id="point5"></div>
 
-  <div id="target5"></div>
-  <div class="kosyas-content-6">
+   <div class="story-6">
 
     <div class="content-text">
 
-      <div id="target"></div>
 
       <h3>
-        {{'content-6-1'|translate}}<br> {{'content-6-2'|translate}}
+        {{'line-6-1'|translate}}<br> {{'line-6-2'|translate}}
       </h3>
     </div>
     <div class="content-hr"></div>
 
-    <button class="submit-button" (click)="goSubmit()">
-      <a href = "https://docs.google.com/forms/d/12nvJDGgksohDAWFOiaj4LP3p9pfleaTolV_xF6nj4-k/edit" target="_blank">
-      <span class="submit-title">{{'content-6-3'|translate}}</span>
-      </a>
-    </button>
 
-    <div class="content-img">
-
-      <ul>
-        <li>
-          <strong>{{'content-6-4'|translate}}</strong>
-          <p>
-            {{'content-6-5'|translate}}
-          </p>
-        </li>
-
-        <li>
-          <strong>{{'content-6-6'|translate}}</strong>
-          <p>
-            {{'content-6-7'|translate}}
-          </p>
-        </li>
-
-        <li>
-          <strong>{{'content-6-8'|translate}}</strong>
-          <p>
-            {{'content-6-9'|translate}}
-          </p>
-        </li>
-      </ul>
+      <a href = "https://docs.google.com/forms/d/1Bb1u7O2jHKFxC3v7Du30HtNddMl6Nfgx6UuuqPAbhE0/edit" target="_blank">
+        <div class="submit-button hover4">
+      {{'line-6-3'|translate}}
     </div>
+      </a>
+
   </div>
 
-  <footer class="kosyas-footer">
+   <footer class="footer">
     <div class="content-text">
-      <div class="content-01">
-        <a href="#">공지사항</a>
+      <div class="footer-01">
+        <a href="#">{{'line-7-2'|translate}}</a>
         <span class="text-hr"></span>
-        <a href="#">민원접수</a>
+        <a href="#">{{'line-7-3'|translate}}</a>
         <span class="text-hr"></span>
-        <a href="#">보호상품등록</a>
+        <a href="#">{{'line-7-4'|translate}}</a>
         <span class="text-hr"></span>
-        <a href="#">상품공시</a>
+        <a href="#">{{'line-7-5'|translate}}</a>
         <span class="text-hr"></span>
-        <a href="#">경영공시</a>
-        <span class="text-hr"></span>
-        <a href="#">개인정보처리방침</a>
+        <a href="#">{{'line-7-6'|translate}}</a>
       </div>
-      <div class="content-02">
-        <span class="tel">{{'content-7-1'|translate}}   </span>
+
+      <div class="footer-02">
+        <span class="tel">{{'line-7-1'|translate}}   </span>
         <br>
           <small>Tel : 02-2097-9797 Fax : 02-2097-9777  |  Copyright © kosyas of Korea Corp. All rights reserved. </small>
       </div>
+
       <ul class="list-channel">
 
         <li>
@@ -315,10 +283,13 @@
       </ul>
     </div>
   </footer>
-  <div class="goup">
-    <a href="#target0" class="scroll">
+
+   <div class="goup">
+    <a [ngx-scroll-to]="'#point0'" class="scroll">
      <div> <img src="../assets/imgs/upload.png" ></div>
     </a>
+  </div>
+
   </div>
 
 </div>

@@ -6,9 +6,9 @@ import {NgsRevealModule} from 'ng-scrollreveal';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-
+import {SlideshowModule} from 'ng-simple-slideshow';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to'; // 스크롤 이동 모듈
 export function createTranslateLoader(http: HttpClient) {
-  // 다국어 파일의 확장자와 경로를 지정
   return new TranslateHttpLoader( http, './assets/i18n/', '.json');
 }
 
@@ -17,9 +17,11 @@ export function createTranslateLoader(http: HttpClient) {
     AppComponent
   ],
   imports: [
+    SlideshowModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ScrollToModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
